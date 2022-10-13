@@ -1,6 +1,10 @@
 ## Projeto abrindo conta no banco
 
-Projeto feito apenas com java, nele é possivel abrir uma conta corrente, ganhando crédito no valor de R$ 50,00 ou poupança, ganhando crédito no valor de R$ 150,00.
+Projeto feito apenas com java, para abrir uma conta no banco neste programa é possivel:
+Abrir conta corrente, ganhando crédito no valor de R$ 50,00 ou poupança, ganhando crédito no valor de R$ 150,00;
+Realizar deposito;
+Realizar Saque;
+Fechar conta.
 
 
 
