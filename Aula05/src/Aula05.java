@@ -5,12 +5,20 @@ public class Aula05 {
         p1.setNumConta(111);
         p1.setDono("Adilsom");
         p1.abrirConta("CC");
-        p1.estadoAtual();
+
 
         ContaBanco p2 = new ContaBanco();
         p2.setNumConta(222);
         p2.setDono("Maria");
         p2.abrirConta("CP");
+
+                
+        p1.depositar(200);      
+        p2.depositar(500);
+
+        p1.fecharConta();
+        
+        p1.estadoAtual();
         p2.estadoAtual();
 
     }

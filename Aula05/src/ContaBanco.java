@@ -33,11 +33,11 @@ public class ContaBanco {
 
 	public void fecharConta() {
 		if (this.getSaldo() > 0) {
-			System.out.println("CONTA COM DINHEIRO");
+			System.out.println("Não é possivel realizar a operação, conta COM SALDO");
 		} else if (this.getSaldo() < 0 ) {
-			System.out.println("CONTA EM DEVENDO DINHEIRO");
+			System.out.println("Crédito NEGATIVO, necessário pagar fatura");
 		} else {this.setStatus(false);
-		System.out.println("CONTA FECHADA COM SUCESSO");
+		System.out.println("CONTA FECHADA COM SUCESSO!");
 		}
 	}
 	public float depositar(float v) {
@@ -48,7 +48,7 @@ public class ContaBanco {
 			this.setSaldo(this.getSaldo() + v);//aqui não pois ultiliza get e set
 			System.out.println("Deposito realizado na conta de " + this.getDono());
 		} else {
-			System.out.println("IMPOSSIVEL DEPOSITAR EM CONTA FECHADA");
+			System.out.println("Impossivel depositar em conta fechada");
 		}
 		return v;
 	}
@@ -81,7 +81,7 @@ public class ContaBanco {
 	}
 	
 	//MÉTODOS ESPECIAIS
-	public void ContaBanco( float saldo, boolean status ) {
+	public ContaBanco( float saldo, boolean status ) {/* não é necessário colocar void ou static em métodos especiais/contrutores */
 		saldo = 0;
 		status = false;
 	}
