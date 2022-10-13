@@ -6,6 +6,6 @@ Realizar deposito;
 Realizar Saque;
 Fechar conta.
 
+![image](https://user-images.githubusercontent.com/110691992/195712000-cc7082a3-031f-4a62-986f-3bb1814acbc9.png)
 
-![image](https://user-images.githubusercontent.com/110691992/195710057-5c020a1c-7c0b-4ec0-8769-638d9ae5af62.png)
 
