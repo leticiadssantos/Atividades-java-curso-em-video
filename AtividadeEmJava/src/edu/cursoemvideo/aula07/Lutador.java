@@ -1,7 +1,7 @@
 package edu.cursoemvideo.aula07;
 
-	
-	public class Lutador{
+public class Lutador {
+
 		
 		// ATRIBUTOS
 		private String nome;
@@ -38,7 +38,7 @@ package edu.cursoemvideo.aula07;
 			this.setVitorias(this.getVitorias() + 1);
 			
 		}
-		public void perderLuta () {
+		public void perdeLuta () {
 			this.setDerrotas(this.getDerrotas() + 1);
 			
 		}
@@ -46,25 +46,21 @@ package edu.cursoemvideo.aula07;
 			this.setEmpates(this.getEmpates() + 1);
 			
 		}
-		
-		
-		
-		
+
 		
 		// MÉTODOS ESPECIAIS
 		
-		public Lutador(String no, String nacionalide, int idade, float altura, float peso, String categoria, int vitorias,
-				int derrotas, int empates) {
+		public Lutador (String no, String na,int id, float al, float pe, int vi,
+				int de, int em) {
 			super();
 			this.nome = no;
-			this.nacionalide = nacionalide;
-			this.idade = idade;
-			this.altura = altura;
-			this.peso = peso;
-			this.categoria = categoria;
-			this.vitorias = vitorias;
-			this.derrotas = derrotas;
-			this.empates = empates;
+			this.nacionalide = na;
+			this.idade = id;
+			this.altura = al;
+			this.setPeso(pe);
+			this.vitorias = vi;
+			this.derrotas = de;
+			this.empates = em;
 		}
 		public String getNome() {
 			return nome;
@@ -94,6 +90,7 @@ package edu.cursoemvideo.aula07;
 			return peso;
 		}
 		public void setPeso(float peso) {
+			this.peso = peso;
 			this.setCategoria();
 		}
 		public String getCategoria() {
@@ -101,8 +98,7 @@ package edu.cursoemvideo.aula07;
 		}
 		private void setCategoria() {
 			if (this.peso < 52.2) {
-				this.categoria = "invalido";
-				
+				this.categoria = "lido";	
 			} else if (this.peso <= 70.3) {
 				this.categoria = "leve";
 			} else if (this.peso <= 83.9) {
@@ -113,6 +109,9 @@ package edu.cursoemvideo.aula07;
 				this.categoria = "invalido";
 			}
 		}
+		
+		
+		
 		
 		
 		public int getVitorias() {
@@ -134,4 +133,5 @@ package edu.cursoemvideo.aula07;
 			this.empates = empates;
 		}
 
-	}
+	
+}
